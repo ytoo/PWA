@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PWA Document</title>
+    <title>PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./favicon.ico">
+    <script type="text/javascript">
+         window.addEventListener("load",function(){
+            console.log("动态插入sw-register.js");
+            // 动态添加sw-register.js文件，并加上时间戳，防止被浏览器缓存（一旦被缓存，及时sw.dev.js文件更新了，也无法生效）
+            var script = document.createElement('script');
+            // var firstScript = document.getElementsByTagName('script')[0];
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = './sw-register.js?v=' + Date.now();
+            // firstScript.parentNode.insertBefore(script, firstScript);
+            document.body.appendChild(script);
+         })
+        // 特别注意，window.onload事件在此处不起作用，无法生效，必须使用addEventListener去监听load事件才可以
+        //  window.onload = function() {
+            // console.log("动态插入sw-register.js");
+            // var script = document.createElement('script');
+            // // var firstScript = document.getElementsByTagName('script')[0];
+            // script.type = 'text/javascript';
+            // script.async = true;
+            // script.src = './sw-register.js?v=' + Date.now();
+            // // firstScript.parentNode.insertBefore(script, firstScript);
+            // document.body.appendChild(script);
+        // };
+    </script>
 </head>
 <body>
-    <h1>PWA demo</h1>
+    <h1>PWA SW 12</h1>
+    <img src="./images/ad.png" alt="">
+    <img src="" alt="">
+    
 </body>
 </html>
