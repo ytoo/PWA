@@ -28,6 +28,7 @@ index.html-->引入sw-register.js + Date.now()-->注册sw.dev.js + buildVersion 
     https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers#Browser_compatibility
     https://lzw.me/a/pwa-service-worker.html
     https://segmentfault.com/a/1190000008050742
+    https://segmentfault.com/a/1190000012701843
 
    百度   lavas：https://lavas.baidu.com/guide
    
