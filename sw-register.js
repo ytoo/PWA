@@ -20,6 +20,13 @@ if ('serviceWorker' in navigator) {
                 console.log("更新失败")
             }
         });
+        
+        // 添加应用横幅事件
+        window.addEventListener('beforeinstallprompt', function (e) {
+            e.userChoice.then(function (choiceResult) {
+                alert(choiceResult.outcome);
+            });
+        });
    
 } else {
     console.log("不支持service worker!");
