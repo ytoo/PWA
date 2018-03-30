@@ -1,0 +1,31 @@
+{
+    "short_name": "投教园地",
+    "name": "平安证券投教园地",
+    "icons": [
+    {
+        "src": "images/icon-48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+    },
+    {
+        "src": "images/icon-80x80.png",
+        "type": "image/png",
+        "sizes": "80x80"
+    },
+    {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "108x108"
+    },
+    {
+        "src": "images/pwa.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    }
+    ],
+    "start_url": "index.html",
+    "theme_color": "red",
+    "background_color": "#2196f3",
+    "display": "standalone"
+
+}
