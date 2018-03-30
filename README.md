@@ -4,7 +4,7 @@
 ```
 index.html-->引入sw-register.js + Date.now()-->注册sw.dev.js + buildVersion -->加载precacheList 静态资源文件和其他相关serviceWork逻辑代码
 ```
-各个文件的作用:
+- 各个文件的作用:
 ```
    index.html--项目首页
    sw-register.js--用来判断是否浏览器是否支持serviceWork，如果支持就注册
@@ -14,10 +14,15 @@ index.html-->引入sw-register.js + Date.now()-->注册sw.dev.js + buildVersion 
 ```
 
 
-执行如下代码可以依据sw.js文件生成sw.dev.js文件（生成预缓存列表）
+- 执行如下代码可以依据sw.js文件生成sw.dev.js文件（生成预缓存列表）
 
 ```js
     node build-sw.js
+```
+
+- 注意:图标中必须要有一张尺寸为144x144的，图标的 mime 类型为 image/png，否则会报如下错误:
+```
+
 ```
 
 ### 参考文章:
@@ -29,6 +34,7 @@ index.html-->引入sw-register.js + Date.now()-->注册sw.dev.js + buildVersion 
     https://lzw.me/a/pwa-service-worker.html
     https://segmentfault.com/a/1190000008050742
     https://segmentfault.com/a/1190000012701843
+    https://blog.csdn.net/lecepin/article/details/78911091
 
    百度   lavas：https://lavas.baidu.com/guide
    
