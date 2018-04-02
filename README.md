@@ -22,7 +22,7 @@ index.html-->引入sw-register.js + Date.now()-->注册sw.dev.js + buildVersion 
 
 - 注意:图标中必须要有一张尺寸为144x144的，图标的 mime 类型为 image/png，否则会报如下错误:
 ```
-
+   Site cannot be installed: a 144px square PNG icon is required, but no supplied icon meets this requirement
 ```
 
 ### 参考文章:
