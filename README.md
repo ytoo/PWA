@@ -11,6 +11,7 @@ index.html-->引入sw-register.js + Date.now()-->注册sw.dev.js + buildVersion 
    sw.dev.js--生成预缓存列表后的serviceWork文件
    build-sw.js--配置如何生成预缓存列表的匹配规则
    sw.js--判断是否支持workbox，并写入生成预缓存配置项，路由匹配缓存规则，缓存更细策略等的逻辑代码
+   manifest.json--添加应用横幅配置文件
 ```
 
 
