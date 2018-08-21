@@ -62,25 +62,25 @@ if (!workbox) {
         workbox.strategies.networkFirst() 
     );
     workbox.routing.registerRoute(
-        'https://stock.stg.pingan.com/images/news/89/69/8969288f4245120e7c3870287cce0ff3.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534871569524&di=e6d2ca7af86e5b5033779b56c5c89d41&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F35%2F96%2F54c58PICBKb_1024.jpg',
         // staleWhileRevalidate这种策略的意思是当请求的路由有对应的 Cache 缓存结果就直接返回，
         // 在返回 Cache 缓存结果的同时会在后台发起网络请求拿到请求结果并更新 Cache 缓存，
         // 如果本来就没有 Cache 缓存的话，直接就发起网络请求并返回结果
         workbox.strategies.staleWhileRevalidate() 
     );
     workbox.routing.registerRoute(
-        'https://stock.stg.pingan.com/images/news/07/6e/076e3caed758a1c18c91a0e9cae3368f.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534871569524&di=e6d2ca7af86e5b5033779b56c5c89d41&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F35%2F96%2F54c58PICBKb_1024.jpg',
         // 第三方缓存时，cacheFirst也可以走service worker缓存
         // workbox.strategies.cacheFirst() 
         workbox.strategies.staleWhileRevalidate()
     );
     workbox.routing.registerRoute(
-        'https://stock.stg.pingan.com/images/news/c1/38/c1385d842201d4905c1f3c31be9fd2d7.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534871569524&di=e6d2ca7af86e5b5033779b56c5c89d41&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F35%2F96%2F54c58PICBKb_1024.jpg',
         // workbox.strategies.cacheFirst() 
         workbox.strategies.staleWhileRevalidate()
     );
     workbox.routing.registerRoute(
-        'https://stock.stg.pingan.com/images/news/2b/04/2b04df3ecc1d94afddff082d139c6f15.jpeg',
+        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534871569524&di=e6d2ca7af86e5b5033779b56c5c89d41&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F35%2F96%2F54c58PICBKb_1024.jpg',
          workbox.strategies.staleWhileRevalidate()
         // workbox.strategies.cacheOnly() 缓存第三方数据时不能使用cacheOnly，否则会报错
     );
